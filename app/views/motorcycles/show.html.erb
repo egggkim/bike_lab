@@ -1,0 +1,22 @@
+<%= render "menu" %>
+
+<h1> <%= @motorcycle.name %> </h1>
+
+<p>This motorcycle is a <%= @motorcycle.type %> that goes <%= @motorcycle.speed %> miles per hour. </p>
+
+<img src="http://images.clipartpanda.com/motorcycle-clipart-flat,550x550,075,f.jpg" /> 
+
+<br>
+<br>
+
+<%= link_to "Back to the bikes", motorcycles_path %>
+
+<br>
+<br>
+
+<%= link_to "Edit this motorcycle", edit_motorcycle_path(@motorcycle) %> 
+
+<br>
+<br>
+
+<%= link_to "Delete your motorcycle!", :motorcycle, method: :delete, data: { confirm: "Are you sure you want to erase this motorcycle from the list?" } %> 

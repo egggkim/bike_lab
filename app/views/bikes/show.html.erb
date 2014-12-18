@@ -9,4 +9,14 @@
 <br>
 <br>
 
-<%= link_to "Back to the bikes", bikes_path %> 
+<%= link_to "Back to the bikes", bikes_path %>
+
+<br>
+<br>
+
+<%= link_to "Edit this bike", edit_bike_path(@bike) %> 
+
+<br>
+<br>
+
+<%= link_to "Delete your bike!", :bike, method: :delete, data: { confirm: "Are you sure you want to erase this bike from the list?" } %> 

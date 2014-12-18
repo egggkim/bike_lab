@@ -1,0 +1,22 @@
+<%= render "menu" %>
+
+<h1>Edit this bike</h1>
+
+<%= form_for @bike do |f| %> 
+
+<div>
+ 
+  <%= f.label :name %>
+  <%= f.text_field :name %> 
+
+  <%= f.label :type %>
+  <%= f.text_field :type %> 
+  
+  <%= f.label :speed %>
+  <%= f.text_field :speed %>
+
+  <%= f.submit "Click to update!" %>
+
+  </div>
+
+<% end %>

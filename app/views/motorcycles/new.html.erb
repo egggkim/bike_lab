@@ -1,19 +1,25 @@
 <%= render "menu" %>
 
-<h1>Add a new bike!</h1>
+<h1>Add a new motorcycle!</h1>
 
-  <%= form_for @bike do |f| %>
+  <%= form_for @motorcycle do |f| %>
     <div>
       <%= f.label :name %> <%= f.text_field :name, :class => "input" %> 
+
       <br>
       <br>
+
       <%= f.label :type %> <%= f.text_field :type, :class => "input" %> 
+
       <br>
       <br>
+
       <%= f.label :speed %> <%= f.text_field :speed, :class => "input" %> 
+
       <br>
       <br>
-      <%= f.submit "Add bike!", :class => "button" %>
+
+      <%= f.submit "Add motorcycle!", :class => "button" %>
     </div>
 
 <% end %>
