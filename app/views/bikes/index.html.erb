@@ -1,0 +1,23 @@
+<%= render "menu"%>
+
+<h1>BIKE CHiPS!</h1>
+
+<ul>
+  
+  <% @bikes.each do |bike| %> 
+
+    <li>
+      <strong>Name:</strong> <%= bike.name %> 
+      <strong>Type:</strong> <%= bike.type %> 
+      <strong>Speed:</strong> <%= bike.speed %> 
+
+      <%= link_to "More about this bike..", bike_path(bike) %>
+    </li>
+
+  <% end %>
+
+  <br> 
+
+  <%= link_to "Add a new bike!", new_bike_path(@bike) %> 
+
+</ul>

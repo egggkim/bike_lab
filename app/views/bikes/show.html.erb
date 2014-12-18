@@ -1,0 +1,12 @@
+<%= render "menu" %>
+
+<h1> <%= @bike.name %> </h1>
+
+<p>This bike is a <%= @bike.type %> that goes <%= @bike.speed %> miles per hour. </p>
+
+<img src="http://images.all-free-download.com/images/graphiclarge/bicycle_clip_art_15905.jpg" /> 
+
+<br>
+<br>
+
+<%= link_to "Back to the bikes", bikes_path %> 

@@ -1,0 +1,14 @@
+<%= render "menu" %>
+
+<h1>Add a new bike!</h1>
+
+  <%= form_for @bike do |f| %>
+    <div>
+      <%= f.label :name %> <%= f.text_field :name, :class => "input" %> 
+      <%= f.label :type %> <%= f.text_field :type, :class => "input" %> 
+      <%= f.label :speed %> <%= f.text_field :speed, :class => "input" %> 
+
+      <%= f.submit "Add bike!", :class => "button" %>
+    </div>
+
+<% end %>
